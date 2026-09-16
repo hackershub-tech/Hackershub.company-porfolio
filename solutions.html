@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions — Heackers Hub</title>
+  <meta name="description" content="Featured software solutions by Heackers Hub — clinic management, LMS & assessment engines, and digital POS systems, with real results.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23030712'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%2300f2fe' font-family='monospace'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-box">
+      booting heackershub.sys ...
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        <span class="logo-bracket">&lt;</span>Heackers<span class="logo-highlight">Hub</span><span class="logo-bracket">/&gt;</span>
+      </a>
+    </div>
+    <div class="nav-overlay"></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html" class="active">Solutions</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="estimator.html">Estimator</a>
+      <a href="contact.html" class="btn-neon">Start Project</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="section">
+    <div class="section-header reveal">
+      <span class="sub-badge">CASE STUDIES</span>
+      <h2 class="section-heading">Featured Software Solutions</h2>
+      <p class="section-desc">Selected product systems and delivery outcomes from our full-stack engineering practice.</p>
+    </div>
+    <div class="grid-3">
+      <div class="glass-card reveal">
+        <div class="project-cover project-cover-medix">
+          <span>MEDIX AI</span><strong>Clinical intelligence</strong>
+        </div>
+        <span class="tag">Healthcare SaaS</span>
+        <h3>Medix AI</h3>
+        <p>AI-powered clinical experience with a focused interface for modern healthcare workflows and patient support.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">React</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">Node.js</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">-60%</span><span class="result-label">Admin Time</span></div>
+          <div><span class="result-num">3x</span><span class="result-label">Faster Scheduling</span></div>
+        </div>
+        <a href="https://medix-ai-six.vercel.app" target="_blank" rel="noopener" class="case-link">Open live project →</a>
+      </div>
+      <div class="glass-card reveal">
+        <div class="project-cover project-cover-clinic">
+          <span>CLINIC PRO</span><strong>Care, organised</strong>
+        </div>
+        <span class="tag">Healthcare Platform</span>
+        <h3>ClinicPro</h3>
+        <p>A polished clinic operations experience designed around patient flow, scheduling, and efficient team coordination.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">Next.js</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">TypeScript</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">5k+</span><span class="result-label">Active Students</span></div>
+          <div><span class="result-num">99.9%</span><span class="result-label">Uptime</span></div>
+        </div>
+        <a href="https://clinicpro-tan.vercel.app/" target="_blank" rel="noopener" class="case-link">Open live project →</a>
+      </div>
+      <div class="glass-card reveal">
+        <div class="project-cover project-cover-wari">
+          <span>MR WARI</span><strong>Digital presence</strong>
+        </div>
+        <span class="tag">Brand Experience</span>
+        <h3>Mr Wari</h3>
+        <p>A high-impact brand website with a bold visual system, responsive storytelling, and conversion-focused sections.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">React</span>
+          <span class="pill">Express</span>
+          <span class="pill">MongoDB</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">-35%</span><span class="result-label">Order Errors</span></div>
+          <div><span class="result-num">+22%</span><span class="result-label">Table Turnover</span></div>
+        </div>
+        <a href="https://hasanraza1019.github.io/mr-wari" target="_blank" rel="noopener" class="case-link">Open live project →</a>
+      </div>
+      <div class="glass-card reveal">
+        <div class="project-cover project-cover-react">
+          <span>REACT LAB</span><strong>Interactive systems</strong>
+        </div>
+        <span class="tag">React Development</span>
+        <h3>React Assignment 5</h3>
+        <p>An interactive React build showcasing component thinking, clean states, and a responsive product interface.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">Vue.js</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">Stripe API</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">-45%</span><span class="result-label">Manual Entry</span></div>
+          <div><span class="result-num">2 days</span><span class="result-label">Faster Close</span></div>
+        </div>
+        <a href="https://aliamirfajar421.github.io/react-assignment-5./" target="_blank" rel="noopener" class="case-link">Open live project →</a>
+      </div>
+      <div class="glass-card reveal">
+        <div class="project-cover project-cover-hackathon">
+          <span>MINI HACKATHON</span><strong>Build fast. Ship smart.</strong>
+        </div>
+        <span class="tag">Frontend Showcase</span>
+        <h3>Mini Hackathon</h3>
+        <p>A rapid product challenge brought to life with a confident visual direction and a fast, usable front-end experience.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">React</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">Mapbox</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">+40%</span><span class="result-label">Lead Capture</span></div>
+          <div><span class="result-num">1.2s</span><span class="result-label">Avg Load Time</span></div>
+        </div>
+        <a href="https://aliamirfajar421.github.io/Mini-Hackcton/" target="_blank" rel="noopener" class="case-link">Open live project →</a>
+      </div>
+      <div class="glass-card reveal">
+        <span class="tag">Logistics</span>
+        <h3>Fleet Tracking Dashboard</h3>
+        <p>Live GPS tracking, driver assignment, and delivery analytics for a regional logistics operator.</p>
+        <div class="tech-pills" style="margin-bottom:1rem;">
+          <span class="pill">React</span>
+          <span class="pill">Socket.io</span>
+          <span class="pill">PostgreSQL</span>
+        </div>
+        <div class="work-results">
+          <div><span class="result-num">-20%</span><span class="result-label">Delivery Delays</span></div>
+          <div><span class="result-num">Real-time</span><span class="result-label">Fleet Visibility</span></div>
+        </div>
+        <a href="contact.html" class="case-link">Discuss a similar build →</a>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <footer>
+    <p>© 2026 Heackers Hub. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — HeackersHub</title>
+  <meta name="description" content="Core engineering capabilities at HeackersHub: custom web applications, SaaS & database engines, and UI/UX design systems.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23030712'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%2300f2fe' font-family='monospace'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-box">
+      booting heackershub.sys ...
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        <span class="logo-bracket">&lt;</span>Heackers<span class="logo-highlight">Hub</span><span class="logo-bracket">/&gt;</span>
+      </a>
+    </div>
+    <div class="nav-overlay"></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="estimator.html">Estimator</a>
+      <a href="contact.html" class="btn-neon">Start Project</a>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="section">
+    <div class="section-header reveal">
+      <span class="sub-badge">WHAT WE BUILD</span>
+      <h1 class="page-title">Core Engineering Capabilities</h1>
+      <p class="section-desc">We combine sleek visual engineering with scalable backend engines to construct enterprise-grade software products.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="glass-card reveal">
+        <div class="card-icon-wrapper">
+          <svg class="neon-svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 16V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12m16 0h2m-18 0H2m2 0h16m-16 0v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        </div>
+        <h3>Custom Web Applications</h3>
+        <p>Ultra-responsive, high-conversion frontend applications built using modern JavaScript frameworks and scalable architecture.</p>
+        <div class="tech-pills">
+          <span class="pill">React</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="glass-card reveal">
+        <div class="card-icon-wrapper">
+          <svg class="neon-svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>SaaS & Database Engines</h3>
+        <p>Robust cloud backends powered by Node.js, Express, and PostgreSQL/Supabase with role-based security access.</p>
+        <div class="tech-pills">
+          <span class="pill">Node.js</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="glass-card reveal">
+        <div class="card-icon-wrapper">
+          <svg class="neon-svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+        </div>
+        <h3>UI/UX & Design Systems</h3>
+        <p>Glassmorphic dark-mode interfaces, interactive wireframes, and scalable component systems designed for growth.</p>
+        <div class="tech-pills">
+          <span class="pill">Figma</span>
+          <span class="pill">CSS Grid</span>
+          <span class="pill">Glassmorphism</span>
+        </div>
+      </div>
+
+      <div class="glass-card reveal">
+        <div class="card-icon-wrapper">
+          <svg class="neon-svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3>API & Cloud Integrations</h3>
+        <p>Payment gateways, third-party APIs, and cloud deployment pipelines connected to your existing tools.</p>
+        <div class="tech-pills">
+          <span class="pill">REST/GraphQL</span>
+          <span class="pill">Docker</span>
+          <span class="pill">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="glass-card reveal">
+        <div class="card-icon-wrapper">
+          <svg class="neon-svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <h3>Maintenance & DevOps</h3>
+        <p>Ongoing monitoring, server management, and version-controlled deployments after launch.</p>
+        <div class="tech-pills">
+          <span class="pill">Git</span>
+          <span class="pill">Monitoring</span>
+          <span class="pill">Backups</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <div class="logo">
+          <a href="index.html" style="text-decoration:none; color:inherit;">
+            <span class="logo-bracket">&lt;</span>Heackers<span class="logo-highlight">Hub</span><span class="logo-bracket">/&gt;</span>
+          </a>
+        </div>
+        <p class="brand-desc">Engineering next-generation software, SaaS products, and enterprise cloud solutions with modern full-stack technologies.</p>
+        <div class="status-badge">
+          <span class="pulse-dot"></span> All Systems Operational
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/hackershub-official/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zm7.5 0h4.31v2.02h.06c.6-1.13 2.07-2.33 4.26-2.33 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.55V23h-4.5V8.25z"/></svg></a>
+          <a href="https://github.com/Hackers4786" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.42.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
+          <a href="#" aria-label="Instagram" title="Instagram coming soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.13.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Capabilities & Services</a></li>
+          <li><a href="solutions.html">Software Solutions</a></li>
+          <li><a href="leadership.html">Leadership Team</a></li>
+          <li><a href="estimator.html">Project Estimator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Full-Stack Web Apps</a></li>
+          <li><a href="services.html">SaaS & Database Engines</a></li>
+          <li><a href="services.html">UI/UX Design Systems</a></li>
+          <li><a href="services.html">API & Cloud Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="mailto:hackershub.company@gmail.com">hackershub.company@gmail.com</a></li>
+          <li><span class="contact-info">WhatsApp / Direct Consultation Available</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Heackers Hub. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

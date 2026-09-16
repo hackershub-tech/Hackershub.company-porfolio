@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Estimator — HeackersHub</title>
+  <meta name="description" content="Instantly calculate a budget estimate for your custom software project with the HeackersHub project scope calculator.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23030712'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%2300f2fe' font-family='monospace'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-box">
+      booting heackershub.sys ...
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        <span class="logo-bracket">&lt;</span>Heackers<span class="logo-highlight">Hub</span><span class="logo-bracket">/&gt;</span>
+      </a>
+    </div>
+    <div class="nav-overlay"></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="estimator.html" class="active">Estimator</a>
+      <a href="contact.html" class="btn-neon">Start Project</a>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="section">
+    <div class="section-header reveal">
+      <span class="sub-badge">INSTANT COST CALCULATOR</span>
+      <h1 class="page-title">Project Scope & Estimator</h1>
+      <p class="section-desc">Select your required modules below to calculate an estimated budget for your custom software product.</p>
+    </div>
+
+    <div class="estimator-container">
+      <div class="glass-card estimator-card reveal">
+        
+        <div class="estimator-header">
+          <h2>⚡ Instant Scope & Investment Calculator</h2>
+          <p>Select your project modules to calculate estimate:</p>
+        </div>
+
+        <div class="estimator-options">
+          
+          <label class="option-card">
+            <input type="checkbox" class="estimator-checkbox" data-price="30000" checked>
+            <span class="custom-check"></span>
+            <div class="option-info">
+              <span class="option-title">Custom Web Application Frontend (React/Vite)</span>
+              <span class="option-price">+ PKR 30,000</span>
+            </div>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" class="estimator-checkbox" data-price="25000">
+            <span class="custom-check"></span>
+            <div class="option-info">
+              <span class="option-title">Backend APIs & Cloud Database Setup (Node/Supabase)</span>
+              <span class="option-price">+ PKR 25,000</span>
+            </div>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" class="estimator-checkbox" data-price="15000">
+            <span class="custom-check"></span>
+            <div class="option-info">
+              <span class="option-title">Auth System & Role-Based Security Permissions</span>
+              <span class="option-price">+ PKR 15,000</span>
+            </div>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" class="estimator-checkbox" data-price="15000">
+            <span class="custom-check"></span>
+            <div class="option-info">
+              <span class="option-title">Dark Glassmorphism Design System & UI Animations</span>
+              <span class="option-price">+ PKR 15,000</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="estimator-summary">
+          <div class="investment-display">
+            <span class="summary-label">Estimated Investment:</span>
+            <h3 class="summary-amount" id="totalInvestment">PKR 30,000</h3>
+          </div>
+          <a href="contact.html" class="btn-neon btn-book">Book Project</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <footer class="main-footer">
+    <div class="footer-bottom centered-footer">
+      <p>© 2026 Heackers Hub. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
